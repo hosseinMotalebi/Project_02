@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --journo-border: rgba(255, 255, 255, 0.12);
+}
+
+@font-face {
+    font-family: robotoMedium;
+    src: url(./as/font/Medium/Roboto-Medium.eot);
+    src: url(./as/font/Medium/Roboto-Medium.ttf);
+    src: url(./as/font/Medium/Roboto-Medium.woff);
+    src: url(./as/font/Medium/Roboto-Medium.woff2);
+}
+
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border: 1px solid #D1DADD;
+}
+
+.profile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.profile-email {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.nav-item2 {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #D1DADD;
+    transition: background-color 0.2s;
+}
+
+.nav-item2:last-child {
+    border-bottom: none;
+}
+
+.nav-item2:hover {
+    background-color: #fafafa;
+}
+
+.nav-item2 i.icon-left {
+    width: 24px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.nav-item2.active {
+    color: #3b2c96;
+}
+
+.nav-item2.active i.icon-left {
+    color: #3b2c96;
+}
+
+.nav-item2 .icon-right {
+    margin-left: auto;
+    font-size: 12px;
+    color: #3b2c96;
+}
+
+.logout-item {
+    color: #dc3545;
+}
+
+.logout-item i.icon-left {
+    color: #dc3545;
+}
+
+.content-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    border: 1px solid #D1DADD;
+}
+
+.content-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.custom-label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+    display: block;
+}
+
+.custom-input,
+.custom-select {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+    color: #222;
+    background-color: #fff;
+    transition: border-color 0.2s;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.custom-input:focus,
+.custom-select:focus {
+    outline: none;
+    border-color: #3b2c96;
+}
+
+.custom-input::placeholder {
+    color: #999;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn-discard {
+    width: 242px;
+    height: 48px;
+    border: 1px solid #88A1A6;
+    color: #88A1A6;
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.btn-save {
+    width: 242px;
+    height: 48px;
+    background-color: #D1DADD;
+    color: #88A1A6;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .mb-md-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+.jbw-dob-group {
+    display: flex;
+    align-items: stretch;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    width: 370px;
+}
+
+.form-select {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 13.5px;
+    padding: 9px 12px;
+    color: var(--jbw-text);
+}
+
+.menu-right>button {
+    width: 45px;
+    height: 26px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: #3a4b4f;
+    font-size: 16px;
+    margin-right: 55px;
+    margin-top: 30px;
+    gap: 4px;
+}
+
+.coreHelp>button {
+    width: 20px;
+    height: 26px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a4b4f;
+    font-size: 16px;
+    flex-direction: row-reverse;
+    margin-right: 134px;
+    margin-top: -26px;
+    font-family: robotoMedium;
+    gap: 7px;
+}
+
+.menu-left {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}

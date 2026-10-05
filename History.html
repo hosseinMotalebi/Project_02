@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOURNO — Booking history</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css">
+  <link rel="stylesheet" href="./History.css">
+</head>
+
+<body>
+  <!-- --Header-- -->
+  <header>
+    <div class="menu-right" dir="rtl">
+      <button class="btn-login-blog">
+        <img src="./as/img/Profile Picture.svg" alt="">
+        <img src="./as/icon/Icon.png" alt="">
+      </button>
+    </div>
+    <div class="coreHelp" dir="rtl">
+      <button>Help
+        <img src="./as/icon/global.png" alt="">
+        <span>|</span>
+      </button>
+    </div>
+    <div class="menu-left bg-image">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-3" href="#"><img src="./as/img/Group 1.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: #3A4B4F;">Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #3A4B4F;">Packages</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <hr>
+  </header>
+  <!-- --Header-- -->
+  <div class="container" style="max-width: 1100px;">
+    <div class="row">
+
+      <!-- Left Sidebar -->
+      <div class="col-lg-3 col-md-4">
+
+        <!-- Profile Block -->
+        <div class="sidebar-card d-flex align-items-center p-3">
+          <img src="./as/img/Profile Picture.svg" class="profile-avatar me-3" alt="Anna Smith">
+          <div>
+            <h2 class="profile-name">Anna Smith</h2>
+            <p class="profile-email">anna.smith@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Nav Menu Block -->
+        <div class="sidebar-card">
+          <a href="./Profile.html" class="nav-item2">
+            <i class="fas fa-user icon-left"></i> Personal data
+          </a>
+          <a href="./History.html" class="nav-item2 active">
+            <i class="far fa-calendar-check icon-left"></i> Booking history
+            <i class="fas fa-chevron-right icon-right"></i>
+          </a>
+          <a href="./Companions.html" class="nav-item2">
+            <i class="fas fa-user-friends icon-left"></i> Companions
+          </a>
+          <a href="./Favourite.html" class="nav-item2">
+            <i class="far fa-heart icon-left"></i> Favourites
+          </a>
+          <a href="" class="nav-item2">
+            <i class="far fa-life-ring icon-left"></i> Help
+          </a>
+          <a href="./Setting.html" class="nav-item2">
+            <i class="fas fa-cog icon-left"></i> Account settings
+          </a>
+        </div>
+        <!-- Logout Block -->
+        <div class="sidebar-card">
+          <a href="./index.html" class="nav-item2 logout-item">
+            <i class="fas fa-sign-out-alt icon-left"></i> Log out
+          </a>
+        </div>
+      </div>
+      <!-- ===== Main ===== -->
+      <main class="col main-col">
+        <section class="jr-card history-panel">
+          <h1 class="history-title">Booking history</h1>
+
+          <div class="booking-list">
+
+            <!-- 1 -->
+            <article class="booking-card">
+              <div class="booking-row">
+                <img src="./as/img/italy.jpg" alt="" class="thumb">
+                <h2 class="booking-name">Italy in 21 Days</h2>
+                <div class="booking-price">€37,240.00</div>
+                <span class="status status-upcoming">Upcoming</span>
+              </div>
+              <button class="show-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#details-1"
+                aria-expanded="false" aria-controls="details-1">
+                <span class="show-more-label">Show more</span>
+                <i class="fa-solid fa-chevron-down show-more-icon"></i>
+              </button>
+              <div class="collapse" id="details-1">
+                <div class="booking-details">
+                  <div><span>Booking ID</span>#JR-0001</div>
+                  <div><span>Duration</span>21 days</div>
+                  <div><span>Total</span>€37,240.00</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="booking-card">
+              <div class="booking-row">
+                <img src="./as/img/italy.jpg" alt="" class="thumb">
+                <h2 class="booking-name">Netherlands</h2>
+                <div class="booking-price">€11,250.00</div>
+                <span class="status status-past status-past-dark">Past Trips</span>
+              </div>
+              <button class="show-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#details-2"
+                aria-expanded="false" aria-controls="details-2">
+                <span class="show-more-label">Show more</span>
+                <i class="fa-solid fa-chevron-down show-more-icon"></i>
+              </button>
+              <div class="collapse" id="details-2">
+                <div class="booking-details">
+                  <div><span>Booking ID</span>#JR-0002</div>
+                  <div><span>Total</span>€11,250.00</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="booking-card">
+              <div class="booking-row">
+                <img src="./as/img/kauai.jpg" alt="" class="thumb">
+                <h2 class="booking-name">Kauai Island</h2>
+                <div class="booking-price">€35,250.00</div>
+                <span class="status status-past">Past Trips</span>
+              </div>
+              <button class="show-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#details-3"
+                aria-expanded="false" aria-controls="details-3">
+                <span class="show-more-label">Show more</span>
+                <i class="fa-solid fa-chevron-down show-more-icon"></i>
+              </button>
+              <div class="collapse" id="details-3">
+                <div class="booking-details">
+                  <div><span>Booking ID</span>#JR-0003</div>
+                  <div><span>Total</span>€35,250.00</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="booking-card">
+              <div class="booking-row">
+                <img src="./as/img/paris.jpg" alt="" class="thumb">
+                <h2 class="booking-name">Paris</h2>
+                <div class="booking-price">€21,250.00</div>
+                <span class="status status-canceled">Canceled</span>
+              </div>
+              <button class="show-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#details-4"
+                aria-expanded="false" aria-controls="details-4">
+                <span class="show-more-label">Show more</span>
+                <i class="fa-solid fa-chevron-down show-more-icon"></i>
+              </button>
+              <div class="collapse" id="details-4">
+                <div class="booking-details">
+                  <div><span>Booking ID</span>#JR-0004</div>
+                  <div><span>Total</span>€21,250.00</div>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="booking-card">
+              <div class="booking-row">
+                <img src="./as/img/hawaii.jpg" alt="" class="thumb">
+                <h2 class="booking-name">Hawaii Island</h2>
+                <div class="booking-price">€15,020.10</div>
+                <span class="status status-past">Past Trips</span>
+              </div>
+              <button class="show-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#details-5"
+                aria-expanded="false" aria-controls="details-5">
+                <span class="show-more-label">Show more</span>
+                <i class="fa-solid fa-chevron-down show-more-icon"></i>
+              </button>
+              <div class="collapse" id="details-5">
+                <div class="booking-details">
+                  <div><span>Booking ID</span>#JR-0005</div>
+                  <div><span>Total</span>€15,020.10</div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.umd.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

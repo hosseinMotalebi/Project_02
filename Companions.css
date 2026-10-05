@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --jr-primary: #293BDC;
+    --jr-title: #2D3A3C;
+    --jr-text: #4B6166;
+    --jr-border: #D1DADD;
+}
+
+@font-face {
+    font-family: robotoMedium;
+    src: url(./as/font/Medium/Roboto-Medium.eot);
+    src: url(./as/font/Medium/Roboto-Medium.ttf);
+    src: url(./as/font/Medium/Roboto-Medium.woff);
+    src: url(./as/font/Medium/Roboto-Medium.woff2);
+}
+
+.menu-right>button {
+    width: 45px;
+    height: 26px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: #3a4b4f;
+    font-size: 16px;
+    margin-right: 55px;
+    margin-top: 30px;
+    gap: 4px;
+}
+
+.coreHelp>button {
+    width: 20px;
+    height: 26px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a4b4f;
+    font-size: 16px;
+    flex-direction: row-reverse;
+    margin-right: 134px;
+    margin-top: -26px;
+    font-family: robotoMedium;
+    gap: 7px;
+}
+
+.menu-left {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    border: 1px solid #D1DADD;
+}
+
+
+.profile-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.profile-email {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.nav-item2 {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #D1DADD;
+    transition: background-color 0.2s;
+}
+
+.nav-item2:last-child {
+    border-bottom: none;
+}
+
+.nav-item2:hover {
+    background-color: #fafafa;
+}
+
+.nav-item2 i.icon-left {
+    width: 24px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.nav-item2.active {
+    color: #3b2c96;
+}
+
+.nav-item2.active i.icon-left {
+    color: #3b2c96;
+}
+
+.nav-item2 .icon-right {
+    margin-left: auto;
+    font-size: 12px;
+    color: #3b2c96;
+}
+
+.logout-item {
+    color: #dc3545;
+}
+
+.logout-item i.icon-left {
+    color: #dc3545;
+}
+
+.companions-card {
+    max-width: 984px;
+    background: #fff;
+    border: 1px solid var(--jr-border);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: none;
+    left: 247px;
+    top: -566px;
+}
+
+.companions-card .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--jr-title);
+    margin: 0;
+}
+
+.btn-new {
+    background-color: var(--jr-primary);
+    color: #fff;
+    height: 32px;
+    min-width: 183px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    box-shadow: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-new:hover,
+.btn-new:focus,
+.btn-new:active {
+    background-color: #1f2fbf;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(41, 59, 220, .3);
+}
+
+.companions-table-wrap {
+    border: 1px solid var(--jr-border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 16px;
+}
+
+.companions-table {
+    margin: 0;
+    min-width: 720px;
+    table-layout: fixed;
+}
+
+.companions-table th,
+.companions-table td {
+    height: 58px;
+    padding: 0 12px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    color: var(--jr-text);
+    background: #fff;
+    border-color: var(--jr-border);
+    border-bottom-width: 1px;
+    white-space: nowrap;
+}
+
+.companions-table thead th {
+    font-weight: 700;
+}
+
+.companions-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.companions-table tbody tr:hover td {
+    background: #f7f9fa;
+}
+
+.companions-table .col-name {
+    width: 28%;
+}
+
+.companions-table .col-type {
+    width: 20%;
+}
+
+.companions-table .col-dob {
+    width: 20%;
+}
+
+.companions-table .col-gender {
+    width: 16%;
+    text-align: right;
+    padding-right: 72px;
+}
+
+.companions-table .col-more {
+    width: 16%;
+}
+
+.link-more {
+    color: var(--jr-text);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link-more:hover {
+    color: var(--jr-primary);
+}
+.row{
+    position: relative;
+    left: -80px; 
+}
